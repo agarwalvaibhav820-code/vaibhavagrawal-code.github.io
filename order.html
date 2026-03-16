@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order</title>
+<script src="script.js"></script>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(to right,#fa709a,#fee140);
+}
+
+.box{
+width:330px;
+margin:auto;
+margin-top:100px;
+background:white;
+padding:25px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+select,input{
+width:90%;
+padding:10px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#ff5722;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Place Order</h2>
+
+<form onsubmit="return orderCheck()">
+
+<select id="product">
+<option value="">Select Product</option>
+<option>Headphones</option>
+<option>Smart Watch</option>
+<option>Bluetooth Speaker</option>
+</select>
+
+<input type="number" id="qty" placeholder="Quantity">
+
+<input type="text" id="pincode" placeholder="Enter Pincode">
+
+<p>Payment Method</p>
+
+<label><input type="radio" name="pay"> Cash on Delivery</label><br>
+<label><input type="radio" name="pay"> UPI</label><br>
+<label><input type="radio" name="pay"> Card</label>
+
+<br><br>
+
+<button type="submit">Place Order</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

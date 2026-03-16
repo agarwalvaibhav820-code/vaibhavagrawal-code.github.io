@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<script src="script.js"></script>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(to right,#43e97b,#38f9d7);
+}
+
+.box{
+width:340px;
+margin:auto;
+margin-top:100px;
+background:white;
+padding:25px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+input,textarea{
+width:90%;
+padding:10px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:green;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>User Registration</h2>
+
+<form onsubmit="return registerCheck()">
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="phone" placeholder="Mobile Number">
+
+<input type="password" id="password" placeholder="Create Password">
+
+<input type="password" id="confirmPassword" placeholder="Confirm Password">
+
+<input type="text" id="pincode" placeholder="Enter Pincode">
+
+<textarea id="address" placeholder="Address"></textarea>
+
+<button type="submit">Register</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

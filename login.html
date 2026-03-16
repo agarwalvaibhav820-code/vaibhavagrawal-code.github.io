@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<script src="script.js"></script>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(to right,#4facfe,#00f2fe);
+}
+
+.box{
+width:320px;
+margin:auto;
+margin-top:120px;
+background:white;
+padding:25px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+padding:10px 20px;
+background:#ff6b6b;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>User Login</h2>
+
+<form onsubmit="return loginCheck()">
+
+<input type="text" id="user" placeholder="Username">
+
+<input type="password" id="pass" placeholder="Password">
+
+<button type="submit">Login</button>
+
+</form>
+
+<p>New user? <a href="register.html">Register</a></p>
+
+</div>
+
+</body>
+</html>
